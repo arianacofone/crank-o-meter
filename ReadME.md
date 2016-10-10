@@ -7,3 +7,9 @@ Please rank your crank based on the scenarios below where 1 is annoyed and 3 is 
 5. You're trying to get off at your stop and no one will let you out. In fact a wave of new people get on the train despite your exclamations of "EXCUSE ME! GETTING OFF!" How cranky are you?
 
 ##**Color Palette**
+dark green  25B222
+nose red    FF0B00
+gold        FFD700
+blue        212fff
+dot pink    FF9A9D
+Wakko Blue  79CEFF
