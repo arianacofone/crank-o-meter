@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import QuestionAPI from './guest/QuestionAPI.jsx';
 
 
 class App extends Component {
@@ -6,6 +7,7 @@ class App extends Component {
     return (
       <div id="app-component">
         <p> App is rendering</p>
+        <QuestionAPI />
       </div>
     );
   }
