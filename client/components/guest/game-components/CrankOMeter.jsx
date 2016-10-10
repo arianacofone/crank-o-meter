@@ -1,13 +1,13 @@
 import React, { Component } from 'react';
 
-class Crank extends Component {
+class CrankOMeter extends Component {
   render() {
     return (
       <div id="crank">
-        <p> Crank</p>
+        <p>CrankOMeter</p>
       </div>
     );
   }
 }
 
-export default Crank;
+export default CrankOMeter;

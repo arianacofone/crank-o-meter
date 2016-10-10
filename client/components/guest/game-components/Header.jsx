@@ -1,12 +1,12 @@
 import React, { Component } from 'react';
-import Crank from './Crank.jsx';
+import CrankOMeter from './CrankOMeter.jsx';
 
 class Header extends Component {
   render() {
     return (
       <div id="header">
         <p> Header is rendering</p>
-        <Crank />
+        <CrankOMeter />
       </div>
     );
   }
