@@ -1,0 +1,19 @@
+{
+  "name": "crank-o-meter",
+  "version": "1.0.0",
+  "description": "a front and back-end web application",
+  "main": "index.jsx",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/arianadziedzic/crank-o-meter.git"
+  },
+  "author": "Ariana, Neil, and TJ",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/arianadziedzic/crank-o-meter/issues"
+  },
+  "homepage": "https://github.com/arianadziedzic/crank-o-meter#readme"
+}
