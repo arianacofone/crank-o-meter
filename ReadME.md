@@ -6,3 +6,4 @@ Please rank your crank based on the scenarios below where 1 is annoyed and 3 is 
 4. You wake up in the morning and are really looking forward to that cup of coffee. You find that someone made it for you! When you take a sip you find it's your worst nightmare. The coffee is cold, burned and decaffeinated! How cranky are you?
 5. You're trying to get off at your stop and no one will let you out. In fact a wave of new people get on the train despite your exclamations of "EXCUSE ME! GETTING OFF!" How cranky are you?
 
+##**Color Palette**
