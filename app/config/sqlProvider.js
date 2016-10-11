@@ -8,11 +8,11 @@ function sql(file) {
 
 const sqlProvider = {
   users: {
-    all: sql('./user/all.sql'),
-    create: sql('./user/create.sql'),
-    find: sql('./user/find.sql'),
+    all: sql('./sql/user/all.sql'),
+    create: sql('./sql/user/create.sql'),
+    find: sql('./sql/user/find.sql'),
   },
-  //This is where sentence and letter functs will be added
+  //This is where sentence and letter funcs will be added
 };
 
 module.exports = sqlProvider;
