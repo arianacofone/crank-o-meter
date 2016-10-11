@@ -62,6 +62,6 @@ class Register extends Component {
   }
 }
 
-export default Register;
-
 Register.propTypes = propTypes;
+
+export default Register;

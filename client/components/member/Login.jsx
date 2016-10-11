@@ -54,6 +54,6 @@ class Login extends Component {
   }
 }
 
-export default Login;
-
 Login.propTypes = propTypes;
+
+export default Login;
