@@ -1,5 +1,5 @@
 body {
-  background-color: grey;
+  background-color: #ecf0f1;
 }
 
 .divGreen {
@@ -23,3 +23,71 @@ body {
  h1 {
    color: cornflowerblue;
  }
+
+ #crank {
+  width: 70%;
+  height: 200px;
+  background-color: #25B222;
+  border-top-right-radius: 15rem;
+  border-top-left-radius: 15rem;
+  text-align: center;
+ }
+
+#question-list {
+  width: 100%;
+  height: 600px;
+  background-color: #79CEFF;
+}
+
+#question {
+ width: 100%;
+ height: 200px;
+ background-color: #FF9A9D;
+}
+
+#question-text {
+  width: 100%;
+  height: 50px;
+  position: relative;
+  top: 15px;
+  background-color: #FFD700;
+}
+
+#answerOne {
+  width: 15%;
+  height: 100px;
+  position: relative;
+  left: 5rem;
+  border-radius: .75rem;
+  background-color: #2980b9;
+  display: inline-block;
+}
+
+#answerTwo {
+  width: 15%;
+  height: 100px;
+  position: relative;
+  left: 10rem;
+  border-radius: .75rem;
+  background-color: #2980b9;
+  display: inline-block;
+}
+
+#answerThree {
+  width: 15%;
+  height: 100px;
+  position: relative;
+  left: 15rem;
+  border-radius: .75rem;
+  background-color: #2980b9;
+  display: inline-block;
+}
+
+#header {
+top: 0;
+ width: 100%;
+ height: 300px;
+ background-color: #FF0B00;
+ margin: 0;
+ /*position: fixed;*/
+}
