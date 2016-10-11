@@ -23,11 +23,6 @@ body {
  h1 {
    color: cornflowerblue;
  }
- @keyframes rotate {
-  100% {
-    transform: rotate(360deg);
-  }
-}
 
  #crank {
   width: 50%;

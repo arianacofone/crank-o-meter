@@ -46,9 +46,8 @@ class QuestionList extends Component {
       this.questionCount += 1;
     } else {
       console.log(this.questionCount);
+      // this is a placeholder until we create a score function
     }
-
-    console.log(this.questionCount);
   }
   render() {
     const questionElements = this.state.questions.map((question, idx) => {
