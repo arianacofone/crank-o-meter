@@ -1,6 +1,6 @@
 const db = require('../config/sql/db');
 const sql = require('../config/sql/sqlProvider').users;
-const User = require('../models/Users');
+const User = require('../models/User');
 
 class UserDAO {
   static all() {
