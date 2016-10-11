@@ -3,7 +3,7 @@ import request from 'superagent';
 import cookie from 'react-cookie';
 import Register from './Register.jsx';
 import Login from './Login.jsx';
-import Home from './letter-components/Home.jsx';
+import Dashboard from './letter-components/Dashboard.jsx';
 
 class Main extends Component {
   constructor() {
@@ -47,7 +47,7 @@ class Main extends Component {
       userElementOptions = (
         <div>
           <button onClick={this.logout}>LOGOUT</button>
-          <Home />
+          <Dashboard />
         </div>
       );
     } else {
