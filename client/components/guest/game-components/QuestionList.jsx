@@ -16,12 +16,38 @@ class QuestionList extends Component {
     this.createQuestion = this.createQuestion.bind(this);
   }
   createQuestion() {
-    const questions = this.state.questions.concat({
-      text: 'Not Cool?',
-      choices: ['1', '2', '3'],
-    });
-    this.setState({ questions });
-    this.questionCount += 1;
+    if (this.questionCount === 0) {
+      const questions = this.state.questions.concat({
+        text: 'Not Cool?',
+        choices: ['1', '2', '3'],
+      });
+      this.setState({ questions });
+      this.questionCount += 1;
+    } else if (this.questionCount === 1) {
+      const questions = this.state.questions.concat({
+        text: 'Super Cool?',
+        choices: ['1', '2', '3'],
+      });
+      this.setState({ questions });
+      this.questionCount += 1;
+    } else if (this.questionCount === 2) {
+      const questions = this.state.questions.concat({
+        text: 'Super Duper Cool?',
+        choices: ['1', '2', '3'],
+      });
+      this.setState({ questions });
+      this.questionCount += 1;
+    } else if (this.questionCount === 3) {
+      const questions = this.state.questions.concat({
+        text: 'Super Not Cool?',
+        choices: ['1', '2', '3'],
+      });
+      this.setState({ questions });
+      this.questionCount += 1;
+    } else {
+      console.log(this.questionCount);
+    }
+
     console.log(this.questionCount);
   }
   render() {

@@ -3,16 +3,25 @@ import React, { Component } from 'react';
 class Question extends Component {
   constructor() {
     super();
-
     this.handleAnswerClick = this.handleAnswerClick.bind(this);
+    this.state = {
+      clientScore: 0,
+    }
     // this.answerChoiceOneHandler = this.answerChoiceOneHandler.bind(this);
   }
   // answerChoiceOneHandler() {
   //   // const answerOneRotate = document.querySelector('#crankStick');
   //   $('#crankStick').css({ transform: 'rotate(120deg)'});
   // }
-  handleAnswerClick() {
-    this.props.handleSubmission();
+  handleAnswerClick(e) {
+    const one = document.querySelector('#answerOne');
+    let clicked = e.target.id;
+    debugger;
+    if ( clicked === one ) {
+      this.props.handleSubmission();
+      this.setState(this.clientScore += 1);
+    }
+    console.log(this.clientScore);
   }
   render() {
     return (
