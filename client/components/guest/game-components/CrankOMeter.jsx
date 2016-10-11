@@ -5,6 +5,7 @@ class CrankOMeter extends Component {
     return (
       <div id="crank">
         <p>CrankOMeter</p>
+        <div id="crankStick"></div>
       </div>
     );
   }

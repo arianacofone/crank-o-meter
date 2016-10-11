@@ -2,11 +2,43 @@ import React, { Component } from 'react';
 import Question from './Question.jsx';
 
 class QuestionList extends Component {
+  constructor(props) {
+    super(props);
+    this.questionCount = 0;
+    this.state = {
+      questions: [
+        {
+          text: 'Cool?',
+          choices: ['1', '2', '3'],
+        },
+      ],
+    };
+    this.createQuestion = this.createQuestion.bind(this);
+  }
+  createQuestion() {
+    const questions = this.state.questions.concat({
+      text: 'Not Cool?',
+      choices: ['1', '2', '3'],
+    });
+    this.setState({ questions });
+    this.questionCount += 1;
+    console.log(this.questionCount);
+  }
   render() {
+    const questionElements = this.state.questions.map((question, idx) => {
+      return (
+        <Question
+          handleSubmission={this.createQuestion}
+          key={idx}
+          text={question.text}
+          choices={question.choices}
+        />
+      );
+    });
     return (
       <div id="question-list">
         <p> Question List is rendering</p>
-        <Question />
+        {questionElements}
       </div>
     );
   }
