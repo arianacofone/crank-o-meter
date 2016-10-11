@@ -1,13 +1,12 @@
 import React, { Component } from 'react';
-import QuestionAPI from './guest/QuestionAPI.jsx';
-
+import Game from './guest/Game.jsx';
 
 class App extends Component {
   render() {
     return (
       <div id="app-component">
         <p> App is rendering</p>
-        <QuestionAPI />
+        <Game />
       </div>
     );
   }

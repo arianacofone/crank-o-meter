@@ -10,7 +10,7 @@ class Register extends Component {
     this.state = {
       name: '',
       email: '',
-      password: ''
+      password: '',
     };
     this.handleInput = this.handleInput.bind(this);
     this.handleSubmit = this.handleSubmit.bind(this);
