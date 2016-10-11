@@ -21,11 +21,11 @@ class AuthController {
         res.status(401).end();
       });
   }
-  static signUp(req, res) {
+  static register(req, res) {
     const name = req.body.name;
     const email = req.body.email;
     let password = req.body.password;
-    if (name.length > 0 && email.length > 0 && password.length > 0) {
+    if (email.length > 0 && password.length > 0) {
       password = bcrypt.hashSync(password, 10);
       UserDAO.create({ name, email, password })
           .then((user) => {
@@ -39,7 +39,7 @@ class AuthController {
       res.status(400).end();
     }
   }
-  static signOut(req, res) {
+  static logout(req, res) {
     req.session.currentUser = null;
     res.clearCookie('token');
     res.status(204).end();

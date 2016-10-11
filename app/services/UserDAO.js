@@ -12,7 +12,7 @@ class UserDAO {
     return db.one(sql.find, [key, value])
              .then((row) => new User(row));
   }
-  staticCreate({ name, email, password }) {
+  static create({ name, email, password }) {
     return db.one(sql.create, [name, email, password])
              . then((row) => new User(row));
   }

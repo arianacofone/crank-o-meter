@@ -1,10 +1,10 @@
 -- migrations for users & letters tables are to be peformed in psql console
 -- migrations for sentence table will be completed with seed file
 
-DROP DATABASE IF EXISTS apology_letter;
-CREATE DATABASE apology_letter;
+DROP DATABASE IF EXISTS crank_o_meter;
+CREATE DATABASE crank_o_meter;
 
-\c apology_letter
+\c crank_o_meter
 
 CREATE TABLE users (
   id SERIAL PRIMARY KEY,
