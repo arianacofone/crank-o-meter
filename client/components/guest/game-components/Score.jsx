@@ -7,7 +7,12 @@ class Score extends Component {
   render() {
     return (
       <div id="score">
+
         <p>Score goes here</p>
+
+        <h1 id="scoreLogo"> Score </h1>
+        <a href="http://imgur.com/NOiBztm"><img id="scoreVideo" src="http://i.imgur.com/NOiBztm.gif" title="source: imgur.com" /></a>
+
       </div>
     );
   }
