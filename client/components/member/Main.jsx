@@ -46,8 +46,8 @@ class Main extends Component {
     if (this.state.token) {
       userElementOptions = (
         <div>
-          <button onClick={this.logout}>LOGOUT</button>
           <Dashboard />
+          <button onClick={this.logout}>LOGOUT</button>
         </div>
       );
     } else {
