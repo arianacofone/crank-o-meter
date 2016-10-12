@@ -2,8 +2,8 @@ import React, { Component } from 'react';
 import Question from './Question.jsx';
 
 class QuestionList extends Component {
-  constructor(props) {
-    super(props);
+  constructor() {
+    super();
     this.questionCount = 0;
     this.state = {
       questions: [
@@ -18,11 +18,8 @@ class QuestionList extends Component {
   }
   changeScore(values) {
     let clicked = values;
-    console.log(clicked);
     let clientScore = this.state.clientScore;
-    console.log(clientScore);
     let total = (clientScore + clicked);
-    console.log(total);
     this.setState({ clientScore: total });
   }
   createQuestion() {

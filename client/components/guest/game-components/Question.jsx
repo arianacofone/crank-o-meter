@@ -1,12 +1,15 @@
 import React, { Component } from 'react';
 
+const propTypes = {
+  text: React.PropTypes.string,
+  addScore: React.PropTypes.func,
+  handleSubmission: React.PropTypes.func,
+};
+
 class Question extends Component {
   constructor(props) {
     super(props);
     this.handleAnswerClick = this.handleAnswerClick.bind(this);
-    this.rage = 3;
-    this.angry = 2;
-    this.meh = 1;
     // this.answerChoiceOneHandler = this.answerChoiceOneHandler.bind(this);
   }
   // answerChoiceOneHandler() {
@@ -32,5 +35,7 @@ class Question extends Component {
     );
   }
 }
+
+Question.propTypes = propTypes;
 
 export default Question;
