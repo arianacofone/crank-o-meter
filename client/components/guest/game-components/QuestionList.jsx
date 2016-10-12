@@ -17,11 +17,13 @@ class QuestionList extends Component {
     this.changeScore = this.changeScore.bind(this);
   }
   changeScore(values) {
-    let clicked = values;
-    let clientScore = this.state.clientScore;
-    let total = (clientScore + clicked);
+    const clicked = values;
+    const clientScore = this.state.clientScore;
+    const total = (clientScore + clicked);
+    console.log(total);
     this.setState({ clientScore: total });
   }
+
   createQuestion() {
     if (this.questionCount === 0) {
       const questions = this.state.questions.concat({
@@ -49,7 +51,6 @@ class QuestionList extends Component {
       this.questionCount += 1;
     } else {
       console.log(this.questionCount);
-      // this is a placeholder until we create a score function
     }
   }
   render() {
