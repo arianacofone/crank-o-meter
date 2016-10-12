@@ -7,8 +7,8 @@ class Dashboard extends Component {
     return (
       <div id="user-db">
         <p> DASHBOARD </p>
-        <Letter />
         <Home />
+        <Letter />
       </div>
     );
   }
