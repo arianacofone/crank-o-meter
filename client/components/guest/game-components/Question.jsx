@@ -27,9 +27,9 @@ class Question extends Component {
         <p> Question </p>
         <div id="question-text">{this.props.text}</div>
         <ul>
-          <li id="answerOne" onClick={this.handleAnswerClick} value={1} >meh</li>
-          <li id="answerTwo" onClick={this.handleAnswerClick} value={2} >angry</li>
-          <li id="answerThree" onClick={this.handleAnswerClick} value={3} >rage</li>
+          <li className="answerButton" id="answerOne" onClick={this.handleAnswerClick} value={1} >meh</li>
+          <li className="answerButton" id="answerTwo" onClick={this.handleAnswerClick} value={2} >angry</li>
+          <li className="answerButton" id="answerThree" onClick={this.handleAnswerClick} value={3} >rage</li>
         </ul>
       </div>
     );

@@ -1,7 +1,3 @@
-body {
-  background-color: #ecf0f1;
-}
-
 .divGreen {
   background-color: #25B222;
 }
@@ -20,94 +16,131 @@ body {
 .divWakkoBlue {
   background-color: #79CEFF;
 }
- h1 {
-   color: cornflowerblue;
- }
-
- #crank {
-  width: 50%;
-  height: 200px;
-  background-color: #2980b9;
-  border-top-right-radius: 15rem;
-  border-top-left-radius: 15rem;
-  text-align: center;
-  margin: 0 auto;
- }
- #crankStick {
-   height: 150px;
-   background-color: black;
-   width: .5rem;
-   margin: 0 auto;
-   top: 165px;
-   position: relative;
-   transform-origin: center top;
-   transform: rotate(90deg);
- }
-
-#question-list {
-  width: 100%;
-  height: 1100px;
-  background-color: #9b59b6;
-  clear: both;
-  /*display: flex;
-  flex-direction: column;*/
+body {
+  background-color: white;
 }
 
-#question {
- width: 100%;
- height: 200px;
- background-color: #34495e;
- /*flex: 1;*/
- /*position: relative;*/
-}
+@media only screen and (max-device-width: 480px) {
+   #logo {
+     margin-left: 2%;
+     color: #e74c3c;
+     font-family: 'Bitter', serif;
+   }
+   #headingLine {
+     height: 30px;
+     background-color: #ecf0f1;
+     border-style: none;
+     width: 100%;
+     font-family: 'Bitter', serif;
+     font-size: 15px;
+     text-align: center;
+     padding-top: 2rem;
+   }
 
-#question-text {
-  width: 100%;
-  height: 50px;
-  position: relative;
-  top: 15px;
-  background-color: #FFD700;
-}
+   #root {
+     background-color: white;
+     width: 100%;
+   }
 
-#answerOne {
-  width: 15%;
-  height: 100px;
-  position: relative;
-  left: 5rem;
-  border-radius: .75rem;
-  background-color: #2980b9;
-  display: inline-block;
-}
+   #crank {
+    width: 40%;
+    height: 200px;
+    top: 25%;
+    left: 0;
+    position: relative;
+    background-image: url(http://i.imgur.com/nW4afql.jpg);
+    background-repeat: no-repeat;
+    background-color: ;
+    background-position: topr;
+    background-size: 390px;
+    border-top-right-radius: 30rem;
+    border-top-left-radius: 30rem;
+    text-align: center;
+    margin: 0 auto;
+   }
+   #crankStick {
+     height: 150px;
+     background-color: #95a5a6;
+     width: .5rem;
+     margin: 0 auto;
+     top: 195px;
+     position: relative;
+     transform-origin: center top;
+     transform: rotate(90deg);
+   }
 
-#answerTwo {
-  width: 15%;
-  height: 100px;
-  position: relative;
-  left: 10rem;
-  border-radius: .75rem;
-  background-color: #2980b9;
-  display: inline-block;
-}
+  #question-list {
+    width: 100%;
+    min-height: 500px;
+    height: auto;
+    background-color: white;
+    clear: both;
+    margin-bottom: 10px;
+    /*display: flex;
+    flex-direction: column;*/
+  }
 
-#answerThree {
-  width: 15%;
-  height: 100px;
-  position: relative;
-  left: 15rem;
-  border-radius: .75rem;
-  background-color: #2980b9;
-  display: inline-block;
-}
+  #question {
+   width: 100%;
+   height: 250px;
+   background-color: #ecf0f1;
+   /*flex: 1;*/
+   /*position: relative;*/
+  }
 
-#header {
-top: 0;
- width: 100%;
- height: 300px;
- background-color: #34495e;
- margin: 0;
- /*position: fixed;*/
-}
+  #question-text {
+    width: 80%;
+    height: 90px;
+    position: relative;
+    top: -10px;
+    background-color: #e74c3c;
+    margin-left: 10%;
+  }
 
-#score {
+  .answerButton {
+    width: 19.3%;
+    height: 30px;
+    position: relative;
+    left: -2.5rem;
+    /*background-color: #e74c3c;*/
+    border: solid black;
+    text-align: center;
+    list-style: none;
+    display: inline-block;
+    margin-left:10.5%;
+    margin-right: 1.3%;
+  }
 
+  #header {
+   top: 0;
+   width: 100%;
+   height: 300px;
+   margin: 0;
+  }
+
+  #score {
+    position: relative;
+    margin-top: 50px;
+    min-height: 200px;
+    height: auto;
+    width: 100%;
+    background-color: #ecf0f1;
+  }
+
+  #scoreLogo {
+    color: #e74c3c;
+    top: 10%;
+    left: 40%;
+    position: relative;
+    font-size: 70px;
+    font-weight: bold;
+    font-family: 'Bitter', serif;
+  }
+  #scoreVideo {
+    width: 420px;
+    height: 315px;
+    left: 27%;
+    margin-bottom: 20px;
+    position: relative;
+  }
 }

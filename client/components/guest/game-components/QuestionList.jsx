@@ -66,7 +66,7 @@ class QuestionList extends Component {
     });
     return (
       <div id="question-list">
-        <p> Question List is rendering</p>
+        {/* <p> Question List is rendering</p> */}
         {questionElements}
       </div>
     );

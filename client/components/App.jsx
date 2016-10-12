@@ -5,7 +5,7 @@ class App extends Component {
   render() {
     return (
       <div id="app-component">
-        <p> App is rendering</p>
+        {/* <p> App is rendering</p> */}
         <Game />
       </div>
     );
