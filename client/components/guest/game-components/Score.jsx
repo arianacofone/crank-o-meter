@@ -5,7 +5,12 @@ class Score extends Component {
     return (
       <div id="score">
         <h1 id="scoreLogo"> Score </h1>
-        <a href="http://imgur.com/NOiBztm"><img id="scoreVideo" src="http://i.imgur.com/NOiBztm.gif" title="source: imgur.com" /></a>
+        <a href="http://imgur.com/NOiBztm">
+          <img
+            id="scoreVideo"
+            src="http://i.imgur.com/NOiBztm.gif" title="source:imgur.com"
+          />
+        </a>
       </div>
     );
   }
