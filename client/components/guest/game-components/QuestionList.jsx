@@ -20,7 +20,6 @@ class QuestionList extends Component {
     const clicked = values;
     const clientScore = this.state.clientScore;
     const total = (clientScore + clicked);
-    console.log(total);
     this.setState({ clientScore: total });
   }
 
@@ -52,6 +51,10 @@ class QuestionList extends Component {
     } else {
       console.log(this.questionCount);
     }
+    console.log(this.state.clientScore)
+  }
+  finalScore() {
+    
   }
   render() {
     const questionElements = this.state.questions.map((question, idx) => {

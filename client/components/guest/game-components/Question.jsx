@@ -4,8 +4,6 @@ const propTypes = {
   text: React.PropTypes.string,
   addScore: React.PropTypes.func,
   handleSubmission: React.PropTypes.func,
-  clientScore: React.PropTypes.number,
-  total: React.PropTypes.number,
 };
 
 class Question extends Component {
@@ -14,16 +12,17 @@ class Question extends Component {
     this.handleAnswerClick = this.handleAnswerClick.bind(this);
     this.answerChoiceHandler = this.answerChoiceHandler.bind(this);
   }
-  answerChoiceHandler() {
-    $('#crankStick').css({ transform: `rotate(${120 + ((3) * 12)}deg)` });
-  }
 
   handleAnswerClick(e) {
     const values = e.target.value;
     this.props.addScore(values);
     this.props.handleSubmission();
-    this.answerChoiceHandler(e);
+    this.answerChoiceHandler(values);
   }
+  answerChoiceHandler(values) {
+    $('#crankStick').css({ transform: `rotate(${90 + ((this.props.addScore(values)) * 12)}deg)` });
+  }
+
   render() {
     return (
       <div id="question">
