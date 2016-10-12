@@ -1,5 +1,5 @@
 body {
-  background-color: grey;
+  background-color: #ecf0f1;
 }
 
 .divGreen {
@@ -23,3 +23,91 @@ body {
  h1 {
    color: cornflowerblue;
  }
+
+ #crank {
+  width: 50%;
+  height: 200px;
+  background-color: #2980b9;
+  border-top-right-radius: 15rem;
+  border-top-left-radius: 15rem;
+  text-align: center;
+  margin: 0 auto;
+ }
+ #crankStick {
+   height: 150px;
+   background-color: black;
+   width: .5rem;
+   margin: 0 auto;
+   top: 165px;
+   position: relative;
+   transform-origin: center top;
+   transform: rotate(90deg);
+ }
+
+#question-list {
+  width: 100%;
+  height: 1100px;
+  background-color: #9b59b6;
+  clear: both;
+  /*display: flex;
+  flex-direction: column;*/
+}
+
+#question {
+ width: 100%;
+ height: 200px;
+ background-color: #34495e;
+ /*flex: 1;*/
+ /*position: relative;*/
+}
+
+#question-text {
+  width: 100%;
+  height: 50px;
+  position: relative;
+  top: 15px;
+  background-color: #FFD700;
+}
+
+#answerOne {
+  width: 15%;
+  height: 100px;
+  position: relative;
+  left: 5rem;
+  border-radius: .75rem;
+  background-color: #2980b9;
+  display: inline-block;
+}
+
+#answerTwo {
+  width: 15%;
+  height: 100px;
+  position: relative;
+  left: 10rem;
+  border-radius: .75rem;
+  background-color: #2980b9;
+  display: inline-block;
+}
+
+#answerThree {
+  width: 15%;
+  height: 100px;
+  position: relative;
+  left: 15rem;
+  border-radius: .75rem;
+  background-color: #2980b9;
+  display: inline-block;
+}
+
+#header {
+top: 0;
+ width: 100%;
+ height: 300px;
+ background-color: #34495e;
+ margin: 0;
+ /*position: fixed;*/
+}
+
+#score {
+
+}
