@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import SentenceAPI from './SentenceAPI.jsx';
+import Letter from './Letter.jsx';
 import Home from './Home.jsx';
 
 class Dashboard extends Component {
@@ -7,7 +7,7 @@ class Dashboard extends Component {
     return (
       <div id="user-db">
         <p> DASHBOARD </p>
-        <SentenceAPI />
+        <Letter />
         <Home />
       </div>
     );
