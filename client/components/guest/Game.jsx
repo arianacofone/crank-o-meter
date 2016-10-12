@@ -8,7 +8,7 @@ class Game extends Component {
   render() {
     return (
       <div id="game">
-        <p> Game is rendering</p>
+        {/* <p> Game is rendering</p> */}
         <Header />
         <QuestionList />
         <Score />

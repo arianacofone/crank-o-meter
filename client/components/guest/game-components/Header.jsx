@@ -5,7 +5,7 @@ class Header extends Component {
   render() {
     return (
       <div id="header">
-        <p> Header is rendering</p>
+        {/* <p> Header is rendering</p> */}
         <CrankOMeter />
       </div>
     );
