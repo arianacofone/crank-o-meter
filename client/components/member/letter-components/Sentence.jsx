@@ -11,7 +11,7 @@ class Sentence extends Component {
   constructor(props) {
     super(props);
     this.state = {
-      Input: this.props.getSentence || '',
+      sentence: '',
     };
     this.getSentence = this.getSentence.bind(this);
     this.switchSentence = this.switchSentence.bind(this);
@@ -23,7 +23,7 @@ class Sentence extends Component {
   getSentence() {
     request.get('/api/sentences')
            .then((response) => {
-             const sentence = response.body;
+             const sentence = response.body[0].sentence;
              this.setState({ sentence });
            });
   }
@@ -31,7 +31,7 @@ class Sentence extends Component {
     e.preventDefault();
     request.get('/api/sentences')
            .then((response) => {
-             const sentence = response.body;
+             const sentence = response.body[0].sentence;
              this.setState({ sentence });
            });
   }
@@ -44,15 +44,16 @@ class Sentence extends Component {
         <input
           type="text"
           name="sentence"
-          value={this.state.Input}
+          className="sentence"
+          value={this.state.sentence}
           onChange={this.props.handleInputEdit}
         />
         <button
           name="refresh"
           type="submit"
-          value="^"
           onClick={this.switchSentence}
-        />
+        >Switch
+        </button>
         <button
           name="delete"
           type="submit"
