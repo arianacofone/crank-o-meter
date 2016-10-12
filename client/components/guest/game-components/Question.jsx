@@ -1,12 +1,12 @@
 import React, { Component } from 'react';
 
 class Question extends Component {
-  constructor() {
-    super();
+  constructor(props) {
+    super(props);
     this.handleAnswerClick = this.handleAnswerClick.bind(this);
-    this.state = {
-      clientScore: 0,
-    }
+    this.rage = 3;
+    this.angry = 2;
+    this.meh = 1;
     // this.answerChoiceOneHandler = this.answerChoiceOneHandler.bind(this);
   }
   // answerChoiceOneHandler() {
@@ -14,14 +14,9 @@ class Question extends Component {
   //   $('#crankStick').css({ transform: 'rotate(120deg)'});
   // }
   handleAnswerClick(e) {
-    const one = document.querySelector('#answerOne');
-    let clicked = e.target.id;
-    debugger;
-    if ( clicked === one ) {
-      this.props.handleSubmission();
-      this.setState(this.clientScore += 1);
-    }
-    console.log(this.clientScore);
+    const values = e.target.value;
+    this.props.addScore(values);
+    this.props.handleSubmission();
   }
   render() {
     return (
@@ -29,9 +24,9 @@ class Question extends Component {
         <p> Question </p>
         <div id="question-text">{this.props.text}</div>
         <ul>
-          <li id="answerOne" onClick={this.handleAnswerClick}>{this.props.choices[0]}</li>
-          <li id="answerTwo" onClick={this.handleAnswerClick}>{this.props.choices[1]}</li>
-          <li id="answerThree" onClick={this.handleAnswerClick}>{this.props.choices[2]}</li>
+          <li id="answerOne" onClick={this.handleAnswerClick} value={1} >meh</li>
+          <li id="answerTwo" onClick={this.handleAnswerClick} value={2} >angry</li>
+          <li id="answerThree" onClick={this.handleAnswerClick} value={3} >rage</li>
         </ul>
       </div>
     );
