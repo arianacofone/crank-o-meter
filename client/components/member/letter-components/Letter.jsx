@@ -9,13 +9,16 @@ class Letter extends Component {
       to: '',
       from: '',
     };
-    this.handleInputEdit =this.handleInputEdit.bind(this);
+    this.handleInputEdit = this.handleInputEdit.bind(this);
     this.sendLetter = this.sendLetter.bind(this);
   }
   handleInputEdit(e) {
     const target = e.target;
+    const name = target.getAttribute('name');
     const value = target.value;
-    this.setState(value);
+    const updated = {};
+    updated[name] = value;
+    this.setState(updated);
   }
   sendLetter({ body }) {
     //TODO: How do I send multiple inputs under one datatype?
@@ -34,16 +37,23 @@ class Letter extends Component {
             placeholder="Dear honey buns"
             onChange={this.handleInputEdit}
           />
-          <Sentence
-            handleInputEdit={this.handleInputEdit}
-          />
+          <Sentence handleInputEdit={this.handleInputEdit} />
+          <Sentence handleInputEdit={this.handleInputEdit} />
+          <Sentence handleInputEdit={this.handleInputEdit} />
+          <Sentence handleInputEdit={this.handleInputEdit} />
+          <Sentence handleInputEdit={this.handleInputEdit} />
           <input
             type="text"
-            name="name"
+            name="anm"
             value={this.state.from}
             placeholder="Love your buddy"
             onChange={this.handleInputEdit}
           />
+          <button
+            name="SEND"
+            type="submit"
+          >SEND
+          </button>
         </form>
       </div>
     );
