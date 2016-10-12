@@ -15,7 +15,8 @@ class Sentence extends Component {
     };
     this.getSentence = this.getSentence.bind(this);
     this.switchSentence = this.switchSentence.bind(this);
-    this.deleteSentence = this.deleteSentence.bind(this);
+    // this.deleteSentence = this.deleteSentence.bind(this);
+    this.handleInputEdit = this.handleInputEdit.bind(this);
   }
   componentDidMount() {
     this.getSentence();
@@ -35,9 +36,17 @@ class Sentence extends Component {
              this.setState({ sentence });
            });
   }
-  deleteSentence(e) {
-    e.preventDefault();
+  handleInputEdit(e) {
+    const target = e.target;
+    const value = target.value;
+    this.setState({
+      sentence: value,
+    });
   }
+  // TODO: Set up delete functionality
+  // deleteSentence(e) {
+  //   e.preventDefault();
+  // }
   render() {
     return (
       <div id="sentence">
@@ -46,7 +55,7 @@ class Sentence extends Component {
           name="sentence"
           className="sentence"
           value={this.state.sentence}
-          onChange={this.props.handleInputEdit}
+          onChange={this.handleInputEdit}
         />
         <button
           name="refresh"
