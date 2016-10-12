@@ -1,46 +1,55 @@
 import React, { Component } from 'react';
 import request from 'superagent';
 import Sentence from './Sentence.jsx';
-import Home from './Home.jsx';
 
 class Letter extends Component {
-  constructor(props) {
-    super(props);
+  constructor() {
+    super();
     this.state = {
       sentence: [],
     };
-    this.getSentence = this.getSentence.bind(this);
-    this.sendSentence = this.sendSentence.bind(this);
+    this.handleInputEdit =this.handleInputEdit.bind(this);
+    this.sendLetter = this.sendLetter.bind(this);
   }
-  getSentence() {
-    request.get('/api/sentences')
-           .then((response) => {
-             const sentence = response.body;
-             this.setState({ sentence });
-           });
+  handleInputEdit(e) {
+    const data = e.target.value;
+    this.setState({
+      Input: data,
+    });
   }
-  sendSentence({ body }) {
-    request.post('/api/sentences')
+  sendLetter({ body }) {
+    //TODO: How do I send multiple inputs under one datatype?
+    request.post('/api/user/letter')
            .send({ body });
-          //  .then(() => {
-          //    // TODO: How do I fix?
-          //    <Home />
-          //  });
   }
   render() {
     return (
       <div id="letter">
         <p> Letter is rendering </p>
-        <form onSubmit={this.sendLetter}
-        <Sentence
-          getSentence={this.getSentence}
-          sendSentence={this.sendSentence}
-        />
-        {/* <Sentence />
-        <Sentence />
-        <Sentence />
-        <Sentence /> */}
-        />
+        <form onSubmit={this.sendLetter}>
+          <input
+            type="text"
+            name="body"
+            value={this.state.body}
+            placeholder="Dear honey buns"
+            onChange={this.handleInputEdit}
+          />
+          <Sentence
+            // getSentence={this.getSentence}
+            handleInputEdit={this.handleInputEdit}
+          />
+          {/* <Sentence getSentence={this.getSentence} />
+          <Sentence getSentence={this.getSentence} />
+          <Sentence getSentence={this.getSentence} />
+          <Sentence getSentence={this.getSentence} /> */}
+          <input
+            type="text"
+            name="body"
+            value={this.state.body}
+            placeholder="Love your buddy"
+            onChange={this.handleInputEdit}
+          />
+        </form>
       </div>
     );
   }

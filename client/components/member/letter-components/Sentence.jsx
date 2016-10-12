@@ -1,6 +1,8 @@
 import React, { Component } from 'react';
+import request from 'superagent';
 
 const propTypes = {
+  handleInputEdit: React.PropTypes.func,
   getSentence: React.PropTypes.func,
   sendSentence: React.PropTypes.func,
 };
@@ -9,31 +11,53 @@ class Sentence extends Component {
   constructor(props) {
     super(props);
     this.state = {
-      body: '',
+      Input: this.props.getSentence || '',
     };
-    this.handleInputEdit = this.handleInputEdit.bind(this);
-    this.handleSubmit = this.handleSubmit.bind(this);
+    this.getSentence = this.getSentence.bind(this);
+    this.switchSentence = this.switchSentence.bind(this);
+    this.deleteSentence = this.deleteSentence.bind(this);
   }
-  handleInputEdit(e) {
-    const target = e.target;
-    const name = target.getAttribute('name');
-    const value = target.value;
-
+  componentDidMount() {
+    this.getSentence();
   }
-  handleSubmit(e) {
+  getSentence() {
+    request.get('/api/sentences')
+           .then((response) => {
+             const sentence = response.body;
+             this.setState({ sentence });
+           });
+  }
+  switchSentence(e) {
     e.preventDefault();
-    this.props.sendSentence(this.state);
+    request.get('/api/sentences')
+           .then((response) => {
+             const sentence = response.body;
+             this.setState({ sentence });
+           });
+  }
+  deleteSentence(e) {
+    e.preventDefault();
   }
   render() {
     return (
       <div id="sentence">
-        <form onSubmit={this.handleSubmit}
-          <input
-            type="text"
-            name="body"
-            value={this.props.getSentence}
-            onChange={this.handleInputEdit}
-          />
+        <input
+          type="text"
+          name="sentence"
+          value={this.state.Input}
+          onChange={this.props.handleInputEdit}
+        />
+        <button
+          name="refresh"
+          type="submit"
+          value="^"
+          onClick={this.switchSentence}
+        />
+        <button
+          name="delete"
+          type="submit"
+          value="X"
+          onClick={this.deleteSentence}
         />
       </div>
     );
