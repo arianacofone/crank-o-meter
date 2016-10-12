@@ -2,11 +2,11 @@ import React, { Component } from 'react';
 import SentenceAPI from './SentenceAPI.jsx';
 import Home from './Home.jsx';
 
-class UserDB extends Component {
+class Dashboard extends Component {
   render() {
     return (
       <div id="user-db">
-        <p> UserDB is Rendering </p>
+        <p> DASHBOARD </p>
         <SentenceAPI />
         <Home />
       </div>
@@ -14,4 +14,4 @@ class UserDB extends Component {
   }
 }
 
-export default UserDB;
+export default Dashboard;
