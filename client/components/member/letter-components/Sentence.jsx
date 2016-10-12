@@ -1,11 +1,6 @@
 import React, { Component } from 'react';
 import request from 'superagent';
-
-const propTypes = {
-  handleInputEdit: React.PropTypes.func,
-  getSentence: React.PropTypes.func,
-  sendSentence: React.PropTypes.func,
-};
+import ReactDOM from 'react-dom';
 
 class Sentence extends Component {
   constructor(props) {
@@ -15,8 +10,8 @@ class Sentence extends Component {
     };
     this.getSentence = this.getSentence.bind(this);
     this.switchSentence = this.switchSentence.bind(this);
-    // this.deleteSentence = this.deleteSentence.bind(this);
     this.handleInputEdit = this.handleInputEdit.bind(this);
+    this.deleteSentence = this.deleteSentence.bind(this);
   }
   componentDidMount() {
     this.getSentence();
@@ -43,16 +38,19 @@ class Sentence extends Component {
       sentence: value,
     });
   }
-  // TODO: Set up delete functionality
-  // deleteSentence(e) {
-  //   e.preventDefault();
-  // }
+  deleteSentence(e) {
+    e.preventDefault();
+    this.setState({
+      sentence: '',
+    });
+  }
   render() {
     return (
       <div id="sentence">
         <input
           type="text"
           name="sentence"
+          id="sentence"
           className="sentence"
           value={this.state.sentence}
           onChange={this.handleInputEdit}
@@ -68,12 +66,11 @@ class Sentence extends Component {
           type="submit"
           value="X"
           onClick={this.deleteSentence}
-        />
+        >Clear
+        </button>
       </div>
     );
   }
 }
-
-Sentence.propTypes = propTypes;
 
 export default Sentence;
