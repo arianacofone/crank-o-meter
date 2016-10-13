@@ -17,8 +17,6 @@ class LetterController {
       subject: 'hi there',
     };
 
-    console.log("This is the transporter", transporter)
-
     transporter.sendMail(letterOptions, (err, info) => {
       if (err) {
         res.send(err);
