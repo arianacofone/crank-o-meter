@@ -7,14 +7,6 @@ class Score extends Component {
   render() {
     return (
       <div id="score">
-<<<<<<< HEAD
-
-        <p>Score goes here</p>
-
-        <h1 id="scoreLogo"> Score </h1>
-        <a href="http://imgur.com/NOiBztm"><img id="scoreVideo" src="http://i.imgur.com/NOiBztm.gif" title="source: imgur.com" /></a>
-
-=======
         <h1 id="scoreLogo"> Score </h1>
         <a href="http://imgur.com/NOiBztm">
           <img
@@ -22,7 +14,6 @@ class Score extends Component {
             src="http://i.imgur.com/NOiBztm.gif" title="source:imgur.com"
           />
         </a>
->>>>>>> 3c45bbe606b5575192962f1f361c8a953b02e2e6
       </div>
     );
   }
