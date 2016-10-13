@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import { withRouter } from 'react-router';
 
 const propTypes = {
   handleLogin: React.PropTypes.func,
@@ -25,10 +26,12 @@ class Login extends Component {
   handleSubmit(e) {
     e.preventDefault();
     this.props.handleLogin(this.state);
+    this.props.router.push('/Dashboard');
   }
   render() {
     return (
       <div id="login">
+      <h1>LOG IN</h1>
         <form onSubmit={this.handleSubmit}>
           <input
             type="email"
@@ -56,4 +59,4 @@ class Login extends Component {
 
 Login.propTypes = propTypes;
 
-export default Login;
+export default withRouter(Login);

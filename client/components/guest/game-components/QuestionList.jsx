@@ -8,7 +8,7 @@ class QuestionList extends Component {
     this.state = {
       questions: [
         {
-          text: 'Cool?',
+          text: 'You\'re stuck behind an old couple slowly walking hand in hand on a small sidewalk on a busy street. How cranky does this make you?',
         },
       ],
       clientScore: 0,
@@ -20,38 +20,57 @@ class QuestionList extends Component {
     const clicked = values;
     const clientScore = this.state.clientScore;
     const total = (clientScore + clicked);
-    console.log(total);
     this.setState({ clientScore: total });
   }
+  componentDidUpdate() {
+    const crankScore = this.state.clientScore;
+    if (crankScore <= 3) {
+      $('#userScore').text('bah humbug')
+    } else if (crankScore > 3 && crankScore <= 4) {
+      $('#userScore').text('hangry?')
+    } else if (crankScore > 5 && crankScore <= 7) {
+      $('#userScore').text('When you did not get the present you wanted.')
+    } else if (crankScore > 8 && crankScore <= 10) {
+      $('#userScore').text('the way star wars episode 1 - 3 made you feel')
+    } else if (crankScore > 11 && crankScore <= 13) {
+      $('#userScore').text('GAAAHHHHH!')
+    } else {
+      $('#userScore').text('Are you fuming?')
+    }
+    $('#crankStick').css({ transform: `rotate(${90 + ((crankScore * 12))}deg)` });
 
+  }
   createQuestion() {
     if (this.questionCount === 0) {
       const questions = this.state.questions.concat({
-        text: 'Not Cool?',
+        text: 'You\'re out to dinner and no one has come to take your order. They are actually so far away from you that you would have to get up an introduce yourself to the waiter. How cranky does this make you?',
       });
       this.setState({ questions });
       this.questionCount += 1;
     } else if (this.questionCount === 1) {
       const questions = this.state.questions.concat({
-        text: 'Super Cool?',
+        text: 'You\'re working out at the gym and someone is sitting at the machine you need and just texting. What\'s your crank rank?',
       });
       this.setState({ questions });
       this.questionCount += 1;
     } else if (this.questionCount === 2) {
       const questions = this.state.questions.concat({
-        text: 'Super Duper Cool?',
+        text: 'You wake up in the morning and are really looking forward to that cup of coffee. You find that someone made it for you! When you take a sip you find it\'s your worst nightmare. The coffee is cold, burned and decaffeinated! How cranky are you?',
       });
       this.setState({ questions });
       this.questionCount += 1;
     } else if (this.questionCount === 3) {
       const questions = this.state.questions.concat({
-        text: 'Super Not Cool?',
+        text: 'You\'re trying to get off at your stop and no one will let you out. In fact a wave of new people get on the train despite your exclamations of "EXCUSE ME! GETTING OFF!" How cranky are you?',
       });
       this.setState({ questions });
       this.questionCount += 1;
     } else {
-      console.log(this.questionCount);
+      // placeholder
     }
+  }
+  finalScore() {
+
   }
   render() {
     const questionElements = this.state.questions.map((question, idx) => {
