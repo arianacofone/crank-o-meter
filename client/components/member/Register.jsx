@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import { withRouter } from 'react-router';
 
 const propTypes = {
   handleRegister: React.PropTypes.func,
@@ -26,10 +27,12 @@ class Register extends Component {
   handleSubmit(e) {
     e.preventDefault();
     this.props.handleRegister(this.state);
+    this.props.router.push('/Dashboard');
   }
   render() {
     return (
       <div id="register">
+      <h1>REGISTER</h1>
         <form onSubmit={this.handleSubmit}>
           <input
             type="text"
@@ -64,4 +67,4 @@ class Register extends Component {
 
 Register.propTypes = propTypes;
 
-export default Register;
+export default withRouter(Register);
