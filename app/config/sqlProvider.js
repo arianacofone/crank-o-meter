@@ -12,7 +12,9 @@ const sqlProvider = {
     create: sql('./sql/user/create.sql'),
     find: sql('./sql/user/find.sql'),
   },
-  //This is where sentence and letter funcs will be added
+  sentences: {
+    get: sql('./sql/sentence/get.sql'),
+  },
 };
 
 module.exports = sqlProvider;

@@ -22,7 +22,6 @@ class QuestionList extends Component {
     const total = (clientScore + clicked);
     this.setState({ clientScore: total });
   }
-
   createQuestion() {
     if (this.questionCount === 0) {
       const questions = this.state.questions.concat({
@@ -70,7 +69,7 @@ class QuestionList extends Component {
     });
     return (
       <div id="question-list">
-        <p> Question List is rendering</p>
+        {/* <p> Question List is rendering</p> */}
         {questionElements}
       </div>
     );

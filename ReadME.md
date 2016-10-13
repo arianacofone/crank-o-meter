@@ -7,9 +7,26 @@ Please rank your crank based on the scenarios below where 1 is annoyed and 3 is 
 5. You're trying to get off at your stop and no one will let you out. In fact a wave of new people get on the train despite your exclamations of "EXCUSE ME! GETTING OFF!" How cranky are you?
 
 ##**Color Palette**
-green       25B222 - crank-o-meter low crank (small sliver) have blend style into gold, send buttons 
+green       25B222 - crank-o-meter low crank (small sliver) have blend style into gold, send buttons
 gold        FFD700 - medium crank blend into red
 nose red    FF0B00 - high crank, logout button
 blue        212fff - score div background (white lettering)
 dot pink    FF9A9D - background for questions background for sign in inputs
 Wakko Blue  79CEFF - when editing sentences turn background of input box
+
+##Technologies Used##
+PostgreSQL
+Express
+React
+Javascript
+HTML
+CSS
+SQL
+ORM
+
+
+##Approach##
+
+##Installation Instructions##
+
+##Unsolved Problems##

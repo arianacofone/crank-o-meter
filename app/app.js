@@ -6,7 +6,7 @@ const session = require('express-session');
 const authentication = require('./middleware/authentication');
 const authRouter = require('./routes/authRouter');
 const userRouter = require('./routes/userRouter');
-// const sentenceRouter = require('./routes/sentenceRouter');
+const sentenceRouter = require('./routes/sentenceRouter');
 
 const app = express();
 
@@ -26,6 +26,6 @@ app.use(morgan('dev'));
 app.use('/api', authentication);
 app.use('/api', authRouter);
 app.use('/api/users', userRouter);
-// app.use('/api/sentences', sentenceRouter);
+app.use('/api/sentences', sentenceRouter);
 
 module.exports = app;
