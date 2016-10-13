@@ -8,6 +8,7 @@ class Score extends Component {
     return (
       <div id="score">
         <h1 id="scoreLogo"> Score </h1>
+        <p id="userScore"></p>
         <a href="http://imgur.com/NOiBztm">
           <img
             id="scoreVideo"
