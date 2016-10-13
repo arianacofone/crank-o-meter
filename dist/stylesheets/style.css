@@ -67,6 +67,7 @@ body {
      position: relative;
      transform-origin: center top;
      transform: rotate(90deg);
+     transition-duration: 1s;
    }
 
   #question-list {
@@ -126,13 +127,20 @@ body {
     width: 100%;
     background-color: #ecf0f1;
   }
-
   #scoreLogo {
     color: #e74c3c;
     top: 10%;
     left: 40%;
     position: relative;
     font-size: 70px;
+    font-weight: bold;
+    font-family: 'Bitter', serif;
+  }
+  #userScore{
+    color: #e74c3c;
+    left: 40%;
+    position: relative;
+    font-size: 60px;
     font-weight: bold;
     font-family: 'Bitter', serif;
   }
@@ -144,7 +152,6 @@ body {
     position: relative;
   }
 }
-
 .sentence {
   width: 50%;
 }
