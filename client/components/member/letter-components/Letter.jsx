@@ -6,8 +6,9 @@ class Letter extends Component {
   constructor() {
     super();
     this.state = {
-      to: '',
-      from: '',
+      recipient: '',
+      sender: '',
+      letter: '',
     };
     this.handleInput = this.handleInput.bind(this);
     this.sendLetter = this.sendLetter.bind(this);
@@ -20,16 +21,46 @@ class Letter extends Component {
     updated[name] = value;
     this.setState(updated);
   }
-  sendLetter({ body }) {
-    // TODO: How do I send multiple inputs under one datatype?
-    request.post('/api/user/letter')
-           .send({ body });
+  sendLetter(e) {
+    e.preventDefault();
+    const sentences = e.target.querySelectorAll('[name=sentence]');
+    const fullLetter = [];
+    for (let sentence of sentences ){
+      fullLetter.push(sentence.value);
+    }
+    this.setState({
+      letter: fullLetter.join(' '),
+    });
+    console.log(this.state)
+    request.post('/api/letters')
+           .send(this.state)
+           .end((err, res) => {
+             if (err) {
+               console.log(err)
+             } else {
+               console.log(res)
+             }
+           });
   }
   render() {
     return (
       <div id="letter">
         <p> Letter is rendering </p>
         <form onSubmit={this.sendLetter}>
+          <input
+            type="email"
+            name="recipient"
+            value={this.state.recipient}
+            placeholder="Enter recipient's email"
+            onChange={this.handleInput}
+          />
+          <input
+            type="email"
+            name="sender"
+            value={this.state.sender}
+            placeholder="Enter your email"
+            onChange={this.handleInput}
+          />
           <input
             type="text"
             name="to"
