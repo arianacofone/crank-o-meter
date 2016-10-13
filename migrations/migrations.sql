@@ -17,8 +17,3 @@ CREATE TABLE sentences (
   sentence TEXT,
   position VARCHAR NOT NULL
 );
-
-CREATE TABLE letters (
-  content TEXT,
-  user_id INTEGER REFERENCES users(id)
-);
