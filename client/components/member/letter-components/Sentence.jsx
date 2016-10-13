@@ -1,6 +1,5 @@
 import React, { Component } from 'react';
 import request from 'superagent';
-import ReactDOM from 'react-dom';
 
 class Sentence extends Component {
   constructor(props) {
