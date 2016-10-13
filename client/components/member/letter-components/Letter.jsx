@@ -49,11 +49,15 @@ class Letter extends Component {
   render() {
     return (
       <div id="letter">
-        <p> Letter is rendering </p>
+        <h2>YOU GOT THIS.</h2>
+        {/* <h4>SENDING APOLOGIES FEELS WRONG, BUT IT IS OH SO RIGHT.
+            PRESS SOME BUTTONS, CHANGE A WORD HERE OR THERE
+            AND YOU ON THE WAY TO BUDDY STATUS</h4> */}
         <form onSubmit={this.sendLetter}>
           <input
             type="email"
             name="recipient"
+            id="email"
             value={this.state.recipient}
             placeholder="Enter recipient's email"
             onChange={this.handleInput}
@@ -61,6 +65,7 @@ class Letter extends Component {
           <input
             type="text"
             name="subject"
+            className="subject"
             value={this.state.subject}
             placeholder="Apology Subject"
             onChange={this.handleInput}
@@ -73,6 +78,7 @@ class Letter extends Component {
           <input
             type="text"
             name="sender"
+            className="subject"
             value={this.state.sender}
             placeholder="Love, your name"
             onChange={this.handleInput}

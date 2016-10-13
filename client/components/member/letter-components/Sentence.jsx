@@ -45,12 +45,11 @@ class Sentence extends Component {
   }
   render() {
     return (
-      <div id="sentence">
+      <div >
         <input
           type="text"
           name="sentence"
           id="sentence"
-          className="sentence"
           value={this.state.sentence}
           onChange={this.handleInputEdit}
         />
