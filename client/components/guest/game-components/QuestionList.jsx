@@ -20,10 +20,26 @@ class QuestionList extends Component {
     const clicked = values;
     const clientScore = this.state.clientScore;
     const total = (clientScore + clicked);
-    console.log(total);
     this.setState({ clientScore: total });
   }
+  componentDidUpdate() {
+    const crankScore = this.state.clientScore;
+    if (crankScore <= 3) {
+      $('#userScore').text('bah humbug')
+    } else if (crankScore > 3 && crankScore <= 4) {
+      $('#userScore').text('hangry?')
+    } else if (crankScore > 5 && crankScore <= 7) {
+      $('#userScore').text('When you did not get the present you wanted.')
+    } else if (crankScore > 8 && crankScore <= 10) {
+      $('#userScore').text('the way star wars episode 1 - 3 made you feel')
+    } else if (crankScore > 11 && crankScore <= 13) {
+      $('#userScore').text('GAAAHHHHH!')
+    } else {
+      $('#userScore').text('Are you fuming?')
+    }
+    $('#crankStick').css({ transform: `rotate(${90 + ((crankScore * 12))}deg)` });
 
+  }
   createQuestion() {
     if (this.questionCount === 0) {
       const questions = this.state.questions.concat({
@@ -50,8 +66,11 @@ class QuestionList extends Component {
       this.setState({ questions });
       this.questionCount += 1;
     } else {
-      console.log(this.questionCount);
+      // placeholder
     }
+  }
+  finalScore() {
+
   }
   render() {
     const questionElements = this.state.questions.map((question, idx) => {
