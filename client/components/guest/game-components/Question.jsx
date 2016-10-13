@@ -17,7 +17,7 @@ class Question extends Component {
     const values = e.target.value;
     this.props.addScore(values);
     this.props.handleSubmission();
-    this.answerChoiceHandler(values);
+    this.answerChoiceHandler(e);
   }
   answerChoiceHandler(values) {
     $('#crankStick').css({ transform: `rotate(${90 + ((this.props.addScore(values)) * 12)}deg)` });
