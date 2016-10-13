@@ -23,7 +23,6 @@ class QuestionList extends Component {
     console.log(total);
     this.setState({ clientScore: total });
   }
-
   createQuestion() {
     if (this.questionCount === 0) {
       const questions = this.state.questions.concat({
