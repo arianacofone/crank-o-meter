@@ -12,9 +12,9 @@ class LetterController {
 
     const letterOptions = {
       to: req.body.recipient,
-      from: req.body.sender,
       text: req.body.letter,
-      subject: 'hi there',
+      subject: req.body.subject,
+      sender: req.body.sender,
     };
 
     transporter.sendMail(letterOptions, (err, info) => {

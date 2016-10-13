@@ -8,10 +8,14 @@ class Letter extends Component {
     this.state = {
       recipient: '',
       sender: '',
+      subject: '',
       letter: '',
     };
     this.handleInput = this.handleInput.bind(this);
     this.sendLetter = this.sendLetter.bind(this);
+  }
+  componentDidUpdate() {
+    this.handleInput(this.state);
   }
   handleInput(e) {
     const target = e.target;
@@ -55,29 +59,22 @@ class Letter extends Component {
             onChange={this.handleInput}
           />
           <input
-            type="email"
+            type="text"
+            name="subject"
+            value={this.state.subject}
+            placeholder="Apology Subject"
+            onChange={this.handleInput}
+          />
+          <Sentence />
+          <Sentence />
+          <Sentence />
+          <Sentence />
+          <Sentence />
+          <input
+            type="text"
             name="sender"
             value={this.state.sender}
-            placeholder="Enter your email"
-            onChange={this.handleInput}
-          />
-          <input
-            type="text"
-            name="to"
-            value={this.state.to}
-            placeholder="Dear honey buns"
-            onChange={this.handleInput}
-          />
-          <Sentence />
-          <Sentence />
-          <Sentence />
-          <Sentence />
-          <Sentence />
-          <input
-            type="text"
-            name="from"
-            value={this.state.from}
-            placeholder="Love your buddy"
+            placeholder="Love, your name"
             onChange={this.handleInput}
           />
           <button
