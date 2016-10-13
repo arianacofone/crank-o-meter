@@ -22,7 +22,7 @@ class Question extends Component {
   render() {
     return (
       <div id="question">
-        <p> Question </p>
+        <p id="instructions"> Choose One: </p>
         <div id="question-text">{this.props.text}</div>
         <ul>
           <li className="answerButton" id="answerOne" onClick={this.handleAnswerClick} value={1} >meh</li>

@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import { Link } from 'react-router';
 import request from 'superagent';
 import cookie from 'react-cookie';
 import Register from './Register.jsx';
@@ -14,6 +15,7 @@ class Main extends Component {
     this.register = this.register.bind(this);
     this.login = this.login.bind(this);
     this.logout = this.logout.bind(this);
+    this.goToLetterView = this.goToLetterView.bind(this);
   }
   componentDidMount() {
     this.updateAuthorization();
@@ -41,6 +43,9 @@ class Main extends Component {
     request.post('/api/logout')
            .then(() => this.updateAuthorization());
   }
+  goToLetterView() {
+    this.props.router.push('/Dashboard');
+  }
   render() {
     let userElementOptions;
     if (this.state.token) {
@@ -53,7 +58,7 @@ class Main extends Component {
     } else {
       userElementOptions = (
         <div id="main">
-          <h1> Register or Login </h1>
+          {/* <h1> Register or Login to Create Your Letter</h1> */}
           <Register handleRegister={this.register} />
           <Login handleLogin={this.login} />
         </div>
