@@ -16,7 +16,6 @@ class UserDAO {
     return db.one(sql.create, [name, email, password])
              . then((row) => new User(row));
   }
-  // In future, add delete static function to remove sentences
 }
 
 module.exports = UserDAO;

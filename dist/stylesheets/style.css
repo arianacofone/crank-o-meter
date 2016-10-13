@@ -26,6 +26,7 @@ body {
      color: #e74c3c;
      font-family: 'Bitter', serif;
    }
+
    #headingLine {
      height: 30px;
      background-color: #ecf0f1;
@@ -58,6 +59,7 @@ body {
     text-align: center;
     margin: 0 auto;
    }
+
    #crankStick {
      height: 150px;
      background-color: #95a5a6;

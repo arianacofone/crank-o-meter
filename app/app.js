@@ -7,6 +7,7 @@ const authentication = require('./middleware/authentication');
 const authRouter = require('./routes/authRouter');
 const userRouter = require('./routes/userRouter');
 const sentenceRouter = require('./routes/sentenceRouter');
+const letterRouter = require('./routes/letterRouter');
 
 const app = express();
 
@@ -27,5 +28,6 @@ app.use('/api', authentication);
 app.use('/api', authRouter);
 app.use('/api/users', userRouter);
 app.use('/api/sentences', sentenceRouter);
+app.use('/api/letters', letterRouter);
 
 module.exports = app;

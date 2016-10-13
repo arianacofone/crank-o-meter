@@ -34,14 +34,14 @@ class Login extends Component {
       <h1>LOG IN</h1>
         <form onSubmit={this.handleSubmit}>
           <input
-            type="text"
+            type="email"
             name="email"
             value={this.state.email}
             placeholder="EMAIL"
             onChange={this.handleInput}
           />
           <input
-            type="text"
+            type="password"
             name="password"
             value={this.state.password}
             placeholder="PASSWORD"
