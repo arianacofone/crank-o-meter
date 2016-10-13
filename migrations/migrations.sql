@@ -1,5 +1,4 @@
 -- migrations for users & letters tables are to be peformed in psql console
--- migrations for sentence table will be completed with seed file
 
 DROP DATABASE IF EXISTS crank_o_meter;
 CREATE DATABASE crank_o_meter;
