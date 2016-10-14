@@ -1,27 +1,27 @@
 ##Technologies Used
-*   [React](https://facebook.github.io/react/docs/getting-started.html) - used to create a one page app allowing for efficent DOM updates. We have multiple components on the page that will need to be updated, including the actual crank-o-meter, rendering of the questions, user score and the sentences for the user's letter.'
-*   Javascript - Primary language used for our web app. Througout the app you'll notice variations of javascript such as jquery and the use of jsx syntax for React functionality.'
+*   [React](https://facebook.github.io/react/docs/getting-started.html) - used to create a one page app allowing for efficent DOM updates. We have multiple components on the page that will need to be updated, including the actual crank-o-meter, rendering of the questions, user score and the sentences for the user's letter.
+*   Javascript - Primary language used for the app. Throughout the app you'll notice variations of javascript such as jquery and the use of jsx syntax for React functionality.
 *   [Express](http://expressjs.com/) - The framework we will use to make requests to our API to give our app C.R.U.D. functionality.
 *   SQL - Database for user name, email, passwords and letters. A second database was created for pre-populated sentences which can be eidted and updated by the user.
 *   [PostgreSQL](https://www.postgresql.org/docs/) - Database management system
-*   Object Relational Mapper - our userDAO (Data Access Object) and sentenceDAO act as our ORMs, translating the objects for database consumption.'
-*   [Nodemailer](https://nodemailer.com/) - allows for the user to email their apology letter created in the App
-*   [Trello](https://trello.com/) - We used trello to direct, organize and manage our ptoject flow. Trello was an essential tool we used to communicate the progress of the assigned user stories, it was especially helpful when working remotely.
-*   [GitHub](https://github.com/) - Used to update, review and merger eachother's code for app development and functionality.'
-*   CSS - Styling for our app as well as making the app responsive for both mobile and web use. After consulting with the UX team, we decided it would best to develop an app that was first mobile responsive since it would be more likely that the user would use it on the go.
+*   Object Relational Mapper - our userDAO (Data Access Object) and sentenceDAO act as our ORMs, translating the objects for database consumption.
+*   [Nodemailer](https://nodemailer.com/) - allows for the user to email their apology letter created in the app.
+*   [Trello](https://trello.com/) - We used trello to direct, organize and manage our ptoject flow. Trello was an essential tool to communicate the progress of the assigned user stories. It was especially helpful when working remotely.
+*   [GitHub](https://github.com/) - Used to update, review and merge code for app development and functionality.
+*   CSS - Styling for our app as well as making the app responsive for both mobile and web use. After consulting with the UX team, we decided it would best to develop an app that was first mobile responsive. This would align with the targetted user's intent.
 *   HTML
 
 
 ##Approach##
-1. As a team we brainstormed for a fullstack web app that we thought could be useful for public consumption. We came to consensus on developing an app that could help both rate one's anger and help develop an "apology" letter.
+1. As a team we brainstormed a fullstack web app that we thought could be useful for public consumption. We came to consensus on developing an app that could help both rate one's anger and help develop an "apology" letter.
 
 2. After developing the idea, we talked, walked (both literally and figuratively) and sketched through the functionality of our app and what we might want the user interface to look like. 
 
-3. Gathering our thoughts and sketches from Ariana we met with colleagues from the UX immersive. They spent the morning with us walking us through their development process. We had the opportunity to finetune our ideas but to also receive valuable and insightful feedback. The six of us were able to whittle the app down to its essentials. The UX team also advised us to focus on mobile development since the target user should want immediate access.
+3. Gathering our thoughts and sketches (Ariana's) we met with colleagues from the UX immersive. We spent a few hours together and went through the abbreviated development process from the UX perspective. We had the opportunity to finetune our ideas but to also receive valuable and insightful feedback. The six of us were able to whittle the app down to its essentials. The UX team also advised us to focus on mobile development since the target user should want immediate access.
 
 4. From brainchild to robust outline we then pushed ourselves to use the SCRUM process developed for the Agile principles. We spent some time breaking down the app into user stories. Trello was a great tool in helping us manage the stories and our sprints. Each morning or beginning of our coding sessions we would "StandUp" to reflect on code and our process.
 
-5. We all found that the process worked smoothly, the bumpy parts were tackling some of the blockers. Throughout we supported each other as best as we could. We paired with each other, researched answers to our questions, referenced other classmates for help and called upon our instructors to rubber ducky us through the problem. At day's end we overcame many of the walls in our path of development.'
+5. We all found that the process worked smoothly. The bumpy parts were tackling some of the blockers. Throughout the process we supported each other as best as we could. We paired with each other, researched answers to our questions, enlisted other classmates for help and called upon our instructors to rubber ducky us through the problem. At day's end we overcame many of the obstacles keeping us from a working app.'
     
 6. Consistently updating and merging our code was esential throughout the development process. We each took the time to thoroughly review eachothers' code, comment and make revisions. It helped us each better understand how the app functions but also to see someone else's coding process.'
 
@@ -60,7 +60,7 @@ By meeting with the UX team, we realized what functions were essential to the ap
 ![alt text] (/pics/version6.png "Closing in on the final version")
 
 ##Installation Instructions##
-Below you will find full list of the dependencies used for the crank-o-meter:
+Below you will find a full list of the dependencies used for the crank-o-meter:
 *   Babel: core, loader, preset-es2015, preset-react
 *   bcrypt
 *   body-parser
