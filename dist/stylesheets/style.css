@@ -291,6 +291,7 @@ z-index: 1;*/
 #userScore{
     color: #e74c3c;
     left: 40%;
+    width: 40%;
     position: relative;
     font-size: 60px;
     font-weight: bold;
@@ -310,7 +311,7 @@ z-index: 1;*/
 #scoreVideo {
  width: 420px;
  height: 315px;
- left: 33%;
+ left: 35%;
  margin-bottom: 8rem;
  position: relative;
 }
@@ -361,6 +362,45 @@ input[type=submit]:hover {
     background-color: #0e0f0e;
 }
 
+#refreshButton {
+  background-color: #e74c3c;
+  border: none;
+  color: white;
+  padding: 16px 32px;
+  text-decoration: none;
+  margin: 4px 2px;
+  cursor: pointer;
+}
+
+#deleteButton {
+  background-color: #e74c3c;
+  border: none;
+  color: white;
+  padding: 16px 32px;
+  text-decoration: none;
+  margin: 4px 2px;
+  cursor: pointer;
+}
+
+#sendButton {
+  background-color: #e74c3c;
+  border: none;
+  color: white;
+  padding: 16px 32px;
+  text-decoration: none;
+  margin: 4px 2px;
+  cursor: pointer;
+}
+
+#logoutButton {
+  background-color: #e74c3c;
+  border: none;
+  color: white;
+  padding: 16px 32px;
+  text-decoration: none;
+  margin: 4px 2px;
+  cursor: pointer;
+}
 /** {
   background: #000 !important;
   color: #0f0 !important;

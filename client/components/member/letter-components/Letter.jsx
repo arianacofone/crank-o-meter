@@ -28,7 +28,6 @@ class Letter extends Component {
   render() {
     return (
       <div id="letter">
-        <p> Letter is rendering </p>
         <form onSubmit={this.sendLetter}>
           <input
             type="text"
@@ -50,6 +49,7 @@ class Letter extends Component {
             onChange={this.handleInput}
           />
           <button
+            id="sendButton"
             name="SEND"
             type="submit"
           >SEND

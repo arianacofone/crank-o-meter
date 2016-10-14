@@ -7,7 +7,7 @@ class Dashboard extends Component {
   render() {
     return (
       <div id="user-db">
-        <p> DASHBOARD </p>
+        <h1 id="letterHeader"> Create Your Letter </h1>
         <Home />
         <Letter />
       </div>
