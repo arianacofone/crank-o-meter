@@ -25,10 +25,6 @@
     
 6. Consistently updating and merging our code was esential throughout the development process. We each took the time to thoroughly review eachothers' code, comment and make revisions. It helped us each better understand how the app functions but also to see someone else's coding process.'
 
-
-
-##Installation Instructions##
-
 ##Unsolved Problems##
 *   Coding the route to the dashboard after login authorization. The point of the app is to have the user gauge their anger based on five questions, after rating they are prompted to register/login to have access to a suggested "apology" letter. 
 *   State and updating state was a consistent thorn in our side in the development process. While the Nodemailer allows the user to email the letter, we were not able to keep the state of the updated letter to send on to the inputted email address.
@@ -36,9 +32,9 @@
 
 ##Next Steps##
 By meeting with the UX team, we realized what functions were essential to the app and what should be next steps.
-*   user access to time stamped letters along with score of their anger that they had at the time.
-*   specific sentences/letters related to situations but also connected to the level of anger. 
-*   feel good videos that can randomize on the page to divert anger. Also rendering of a congratulatory video after the letter is sent.
+*   User access to time stamped letters along with score of their anger that they had at the time.
+*   Specific sentences/letters related to situations but also connected to the level of anger. 
+*   Feel good videos that can randomize on the page to divert anger. Also rendering of a congratulatory video after the letter is sent.
 
 ##Photographic Timeline##
 
@@ -63,6 +59,22 @@ By meeting with the UX team, we realized what functions were essential to the ap
 #### 20 million versions later   
 ![alt text] (/pics/version6.png "Closing in on the final version")
 
+##Installation Instructions##
+Below you will find full list of the dependencies used for the crank-o-meter:
+*   Babel: core, loader, preset-es2015, preset-react
+*   bcrypt
+*   body-parser
+*   cookie-parser
+*   dotenv
+*   eslint: airbnb, import, jsx-ally, react
+*   express: history-api-fallback, session
+*   jsonwebtoken
+*   morgan
+*   nodemailer
+*   pg-promise
+*   react: cookie, dom, router
+*   superagent
+*   webpack: dev-middleware, dev-server, hot-middleware
 
 ##Additional Pictures
 ![alt text] (/pics/wireframe.jpg "front and back")
