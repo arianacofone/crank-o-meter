@@ -25,9 +25,9 @@ class Question extends Component {
         <p id="instructions"> Choose One: </p>
         <div id="question-text">{this.props.text}</div>
         <ul>
-          <li className="answerButton" id="answerOne" onClick={this.handleAnswerClick} value={1} >meh</li>
-          <li className="answerButton" id="answerTwo" onClick={this.handleAnswerClick} value={2} >angry</li>
-          <li className="answerButton" id="answerThree" onClick={this.handleAnswerClick} value={3} >rage</li>
+          <li className="answerButton" id="answerOne" onClick={this.handleAnswerClick} value={1} >Meh</li>
+          <li className="answerButton" id="answerTwo" onClick={this.handleAnswerClick} value={2} >I'm Pretty Angry</li>
+          <li className="answerButton" id="answerThree" onClick={this.handleAnswerClick} value={3} >I'm Raging</li>
         </ul>
       </div>
     );

@@ -52,7 +52,7 @@ class Main extends Component {
       userElementOptions = (
         <div>
           <Dashboard />
-          <button onClick={this.logout}>LOGOUT</button>
+          <button id="logoutButton" onClick={this.logout}>LOGOUT</button>
         </div>
       );
     } else {

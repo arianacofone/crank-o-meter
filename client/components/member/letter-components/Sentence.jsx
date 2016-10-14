@@ -54,12 +54,14 @@ class Sentence extends Component {
           onChange={this.handleInputEdit}
         />
         <button
+          id="refreshButton"
           name="refresh"
           type="submit"
           onClick={this.switchSentence}
         >Switch
         </button>
         <button
+          id="deleteButton"
           name="delete"
           type="submit"
           value="X"

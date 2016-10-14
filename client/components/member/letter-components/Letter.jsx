@@ -49,10 +49,6 @@ class Letter extends Component {
   render() {
     return (
       <div id="letter">
-        <h2>YOU GOT THIS.</h2>
-        {/* <h4>SENDING APOLOGIES FEELS WRONG, BUT IT IS OH SO RIGHT.
-            PRESS SOME BUTTONS, CHANGE A WORD HERE OR THERE
-            AND YOU ON THE WAY TO BUDDY STATUS</h4> */}
         <form onSubmit={this.sendLetter}>
           <input
             type="email"
@@ -84,6 +80,7 @@ class Letter extends Component {
             onChange={this.handleInput}
           />
           <button
+            id="sendButton"
             name="SEND"
             type="submit"
           >SEND
