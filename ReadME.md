@@ -1,15 +1,15 @@
 ##Technologies Used
-*[React](https://facebook.github.io/react/docs/getting-started.html) - used to create a one page app allowing for efficent DOM updates. We have multiple components on the page that will need to be updated, including the actual crank-o-meter, rendering of the questions, user score and the sentences for the user's letter.'
-*Javascript - Primary language used for our web app. Througout the app you'll notice variations of javascript such as jquery and the use of jsx syntax for React functionality.'
-*[Express](http://expressjs.com/) - The framework we will use to make requests to our API to give our app C.R.U.D. functionality.
-*SQL - Database for user name, email, passwords and letters. A second database was created for pre-populated sentences which can be eidted and updated by the user.
-*[PostgreSQL](https://www.postgresql.org/docs/) - Database management system
-*Object Relational Mapper - our userDAO (Data Access Object) and sentenceDAO act as our ORMs, translating the objects for database consumption.'
-*[Nodemailer](https://nodemailer.com/) - allows for the user to email their apology letter created in the App
-*[Trello](https://trello.com/) - We used trello to direct, organize and manage our ptoject flow. Trello was an essential tool we used to communicate the progress of the assigned user stories, it was especially helpful when working remotely.
-*[GitHub](https://github.com/) - Used to update, review and merger eachother's code for app development and functionality.'
-*CSS - Styling for our app as well as making the app responsive for both mobile and web use. After consulting with the UX team, we decided it would best to develop an app that was first mobile responsive since it would be more likely that the user would use it on the go.
-*HTML
+*   [React](https://facebook.github.io/react/docs/getting-started.html) - used to create a one page app allowing for efficent DOM updates. We have multiple components on the page that will need to be updated, including the actual crank-o-meter, rendering of the questions, user score and the sentences for the user's letter.'
+*   Javascript - Primary language used for our web app. Througout the app you'll notice variations of javascript such as jquery and the use of jsx syntax for React functionality.'
+*   [Express](http://expressjs.com/) - The framework we will use to make requests to our API to give our app C.R.U.D. functionality.
+*   SQL - Database for user name, email, passwords and letters. A second database was created for pre-populated sentences which can be eidted and updated by the user.
+*   [PostgreSQL](https://www.postgresql.org/docs/) - Database management system
+*   Object Relational Mapper - our userDAO (Data Access Object) and sentenceDAO act as our ORMs, translating the objects for database consumption.'
+*   [Nodemailer](https://nodemailer.com/) - allows for the user to email their apology letter created in the App
+*   [Trello](https://trello.com/) - We used trello to direct, organize and manage our ptoject flow. Trello was an essential tool we used to communicate the progress of the assigned user stories, it was especially helpful when working remotely.
+*   [GitHub](https://github.com/) - Used to update, review and merger eachother's code for app development and functionality.'
+*   CSS - Styling for our app as well as making the app responsive for both mobile and web use. After consulting with the UX team, we decided it would best to develop an app that was first mobile responsive since it would be more likely that the user would use it on the go.
+*   HTML
 
 
 ##Approach##
