@@ -69,6 +69,7 @@ body {
      position: relative;
      transform-origin: center top;
      transform: rotate(90deg);
+     transition-duration: 1s;
    }
 
   #question-list {
@@ -131,7 +132,6 @@ body {
     width: 100%;
     /*background-color: #ecf0f1;*/
   }
-
   #scoreLogo {
     color: #e74c3c;
     width: 40%;
@@ -139,6 +139,14 @@ body {
     left: 40%;
     position: relative;
     font-size: 70px;
+    font-weight: bold;
+    font-family: 'Bitter', serif;
+  }
+  #userScore{
+    color: #e74c3c;
+    left: 40%;
+    position: relative;
+    font-size: 60px;
     font-weight: bold;
     font-family: 'Bitter', serif;
   }
@@ -156,7 +164,6 @@ body {
   }
   view rawghost.css*/
 }
-
 .sentence {
   width: 50%;
 }
@@ -300,6 +307,12 @@ background: black;
     font-weight: bold;
     font-family: 'Bitter', serif;
   }
+#feelBetter {
+  left: 37%;
+  position: relative;
+  font-weight: bold;
+  font-family: 'Bitter', serif;
+}
 #scoreVideo {
  width: 420px;
  height: 315px;

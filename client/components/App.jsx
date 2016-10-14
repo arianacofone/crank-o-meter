@@ -6,7 +6,8 @@ class App extends Component {
     return (
       <div id="app-component">
         <h1 id="logo">Crank-O-Meter</h1>
-        <div id="headingLine">Who's a cranky widdle baby? You are! Yes you are widdle baby</div>
+        <div id="headingLine">Are you cranky, angry or just plain pissed? <br/>
+        Check your crank and write a letter to mend those fences.</div>
         <Game />
       </div>
     );
