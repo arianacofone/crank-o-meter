@@ -16,47 +16,60 @@
 1. As a team we brainstormed for a fullstack web app that we thought could be useful for public consumption. We came to consensus on developing an app that could help both rate one's anger and help develop an "apology" letter.
 2. After developing the idea, we talked, walked (both literally and figuratively) and sketched through the functionality of our app and what we might want the user interface to look like. 
 
-###Initial Sketch of the app
-    ![alt text] (/pics/Version1.jpg "Initial Sketch of app")
+
 
 3. Gathering our thoughts and sketches from Ariana we met with colleagues from the UX immersive. They spent the morning with us walking us through their development process. We had the opportunity to finetune our ideas but to also receive valuable and insightful feedback. The six of us were able to whittle the app down to its essentials. The UX team also advised us to focus on mobile development since the target user should want immediate access.
 
-###Revised app after meeting with UX team
-    ![alt text] (/pics/version2.jpg "Revised app after meeting with UX team")
+
 
 4. From brainchild to robust outline we then pushed ourselves to use the SCRUM process developed for the Agile principles. We spent some time breaking down the app into user stories. Trello was a great tool in helping us manage the stories and our sprints. Each morning or beginning of our coding sessions we would "StandUp" to reflect on code and our process.
 
-###Close up of the revised Crank-o-meter
-    ![alt text] (/pics/version2.1.jpg "Close up of app")
 
-###User Stories   
-    ![alt text] (/pics/userStories.jpg "Our user stories")
 
 5. We all found that the process worked smoothly, the bumpy parts were tackling some of the blockers. Throughout we supported each other as best as we could. We paired with each other, researched answers to our questions, referenced other classmates for help and called upon our instructors to rubber ducky us through the problem. At day's end we overcame many of the walls in our path of development.'
     
-###Crank-o-meter directory
-    ![alt text] (/pics/directory.png "app directory")
 
-###Initial render with divs
-    ![alt text] (/pics/divColorsRender.png "Initial render of our divs")
 
 6. Consistently updating and merging our code was esential throughout the development process. We each took the time to thoroughly review eachothers' code, comment and make revisions. It helped us each better understand how the app functions but also to see someone else's coding process.'
 
-### 20 million versions later   
-![alt text] (/pics/version6.png "Closing in on the final version")
+
 
 ##Installation Instructions##
 
 ##Unsolved Problems##
-*Coding the route to the dashboard after login authorization. The point of the app is to have the user gauge their anger based on five questions, after rating they are prompted to register/login to have access to a suggested "apology" letter. 
-*State and updating state was a consistent thorn in our side in the development process. While the Nodemailer allows the user to email the letter, we were not able to keep the state of the updated letter to send on to the inputted email address.
-*As mentioned before the user will have to register to have access to the letter. Despite having the create, read and update for all of our app, the delete function is a whole other beast that will have to be solved after project submission.
+*   Coding the route to the dashboard after login authorization. The point of the app is to have the user gauge their anger based on five questions, after rating they are prompted to register/login to have access to a suggested "apology" letter. 
+*   State and updating state was a consistent thorn in our side in the development process. While the Nodemailer allows the user to email the letter, we were not able to keep the state of the updated letter to send on to the inputted email address.
+*   As mentioned before the user will have to register to have access to the letter. Despite having the create, read and update for all of our app, the delete function is a whole other beast that will have to be solved after project submission.
 
 ##Next Steps##
 By meeting with the UX team, we realized what functions were essential to the app and what should be next steps.
-*user access to time stamped letters along with score of their anger that they had at the time.
-*specific sentences/letters related to situations but also connected to the level of anger. 
-*feel good videos that can randomize on the page to divert anger. Also rendering of a congratulatory video after the letter is sent.
+*   user access to time stamped letters along with score of their anger that they had at the time.
+*   specific sentences/letters related to situations but also connected to the level of anger. 
+*   feel good videos that can randomize on the page to divert anger. Also rendering of a congratulatory video after the letter is sent.
+
+##Photographic Timeline##
+
+####Initial Sketch of the app
+![alt text] (/pics/Version1.jpg "Initial Sketch of app")
+
+####Revised app after meeting with UX team
+![alt text] (/pics/version2.jpg "Revised app after meeting with UX team")
+
+####Close up of the revised Crank-o-meter
+![alt text] (/pics/version2.1.jpg "Close up of app")
+
+####User Stories   
+![alt text] (/pics/userStories.jpg "Our user stories")
+
+####Crank-o-meter directory
+![alt text] (/pics/directory.png "app directory")
+
+####Initial render with divs
+![alt text] (/pics/divColorsRender.png "Initial render of our divs")
+
+#### 20 million versions later   
+![alt text] (/pics/version6.png "Closing in on the final version")
+
 
 ##Additional Pictures
 ![alt text] (/pics/wireframe.jpg "front and back")
