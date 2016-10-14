@@ -6,11 +6,16 @@ class Letter extends Component {
   constructor() {
     super();
     this.state = {
-      to: '',
-      from: '',
+      recipient: '',
+      sender: '',
+      subject: '',
+      letter: '',
     };
     this.handleInput = this.handleInput.bind(this);
     this.sendLetter = this.sendLetter.bind(this);
+  }
+  componentDidUpdate() {
+    this.handleInput(this.state);
   }
   handleInput(e) {
     const target = e.target;
@@ -20,20 +25,45 @@ class Letter extends Component {
     updated[name] = value;
     this.setState(updated);
   }
-  sendLetter({ body }) {
-    // TODO: How do I send multiple inputs under one datatype?
-    request.post('/api/user/letter')
-           .send({ body });
+  sendLetter(e) {
+    e.preventDefault();
+    const sentences = e.target.querySelectorAll('[name=sentence]');
+    const fullLetter = [];
+    for (let sentence of sentences ){
+      fullLetter.push(sentence.value);
+    }
+    this.setState({
+      letter: fullLetter.join(' '),
+    });
+    console.log(this.state)
+    request.post('/api/letters')
+           .send(this.state)
+           .end((err, res) => {
+             if (err) {
+               console.log(err)
+             } else {
+               console.log(res)
+             }
+           });
   }
   render() {
     return (
       <div id="letter">
         <form onSubmit={this.sendLetter}>
           <input
+            type="email"
+            name="recipient"
+            id="email"
+            value={this.state.recipient}
+            placeholder="Enter recipient's email"
+            onChange={this.handleInput}
+          />
+          <input
             type="text"
-            name="to"
-            value={this.state.to}
-            placeholder="Dear honey buns"
+            name="subject"
+            className="subject"
+            value={this.state.subject}
+            placeholder="Apology Subject"
             onChange={this.handleInput}
           />
           <Sentence />
@@ -43,9 +73,10 @@ class Letter extends Component {
           <Sentence />
           <input
             type="text"
-            name="from"
-            value={this.state.from}
-            placeholder="Love your buddy"
+            name="sender"
+            className="subject"
+            value={this.state.sender}
+            placeholder="Love, your name"
             onChange={this.handleInput}
           />
           <button

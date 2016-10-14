@@ -26,6 +26,7 @@ body {
      color: #e74c3c;
      font-family: 'Bitter', serif;
    }
+
    #headingLine {
      height: 30px;
      background-color: #ecf0f1;
@@ -58,6 +59,7 @@ body {
     text-align: center;
     margin: 0 auto;
    }
+
    #crankStick {
      height: 150px;
      background-color: #95a5a6;
@@ -67,6 +69,7 @@ body {
      position: relative;
      transform-origin: center top;
      transform: rotate(90deg);
+     transition-duration: 1s;
    }
 
   #question-list {
@@ -129,7 +132,6 @@ body {
     width: 100%;
     /*background-color: #ecf0f1;*/
   }
-
   #scoreLogo {
     color: #e74c3c;
     width: 40%;
@@ -137,6 +139,14 @@ body {
     left: 40%;
     position: relative;
     font-size: 70px;
+    font-weight: bold;
+    font-family: 'Bitter', serif;
+  }
+  #userScore{
+    color: #e74c3c;
+    left: 40%;
+    position: relative;
+    font-size: 60px;
     font-weight: bold;
     font-family: 'Bitter', serif;
   }
@@ -149,7 +159,6 @@ body {
   }
 
 }
-
 .sentence {
   width: 50%;
 }
@@ -308,6 +317,12 @@ z-index: 1;*/
     font-weight: bold;
     font-family: 'Bitter', serif;
   }
+#feelBetter {
+  left: 37%;
+  position: relative;
+  font-weight: bold;
+  font-family: 'Bitter', serif;
+}
 #scoreVideo {
  width: 420px;
  height: 315px;
