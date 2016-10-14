@@ -14,22 +14,15 @@
 
 ##Approach##
 1. As a team we brainstormed for a fullstack web app that we thought could be useful for public consumption. We came to consensus on developing an app that could help both rate one's anger and help develop an "apology" letter.
+
 2. After developing the idea, we talked, walked (both literally and figuratively) and sketched through the functionality of our app and what we might want the user interface to look like. 
-
-
 
 3. Gathering our thoughts and sketches from Ariana we met with colleagues from the UX immersive. They spent the morning with us walking us through their development process. We had the opportunity to finetune our ideas but to also receive valuable and insightful feedback. The six of us were able to whittle the app down to its essentials. The UX team also advised us to focus on mobile development since the target user should want immediate access.
 
-
-
 4. From brainchild to robust outline we then pushed ourselves to use the SCRUM process developed for the Agile principles. We spent some time breaking down the app into user stories. Trello was a great tool in helping us manage the stories and our sprints. Each morning or beginning of our coding sessions we would "StandUp" to reflect on code and our process.
-
-
 
 5. We all found that the process worked smoothly, the bumpy parts were tackling some of the blockers. Throughout we supported each other as best as we could. We paired with each other, researched answers to our questions, referenced other classmates for help and called upon our instructors to rubber ducky us through the problem. At day's end we overcame many of the walls in our path of development.'
     
-
-
 6. Consistently updating and merging our code was esential throughout the development process. We each took the time to thoroughly review eachothers' code, comment and make revisions. It helped us each better understand how the app functions but also to see someone else's coding process.'
 
 
@@ -50,7 +43,7 @@ By meeting with the UX team, we realized what functions were essential to the ap
 ##Photographic Timeline##
 
 ####Initial Sketch of the app
-![alt text] (/pics/Version1.jpg "Initial Sketch of app")
+![alt text] (/pics/version1.jpg "Initial Sketch of app")
 
 ####Revised app after meeting with UX team
 ![alt text] (/pics/version2.jpg "Revised app after meeting with UX team")
