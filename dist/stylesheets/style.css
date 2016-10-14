@@ -307,6 +307,12 @@ background: black;
     font-weight: bold;
     font-family: 'Bitter', serif;
   }
+#feelBetter {
+  left: 37%;
+  position: relative;
+  font-weight: bold;
+  font-family: 'Bitter', serif;
+}
 #scoreVideo {
  width: 420px;
  height: 315px;
