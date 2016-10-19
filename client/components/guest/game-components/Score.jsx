@@ -10,11 +10,7 @@ class Score extends Component {
         <h1 id="scoreLogo"> Score </h1>
         <p id="userScore"></p>
         <h3 id="feelBetter">Hope this makes you feel a little better.</h3>
-        <a href="http://imgur.com/NOiBztm">
-          <img
-            id="scoreVideo"
-            src="https://giphy.com/gifs/l0MYRuSiiWHcrlXwc/html5" title="source:imgur.com"
-          />
+        <a href="http://imgur.com/PXTQqta"><img id="scoreVideo" src="http://i.imgur.com/PXTQqta.gif" title="source: imgur.com" /></a>
       </div>
     );
   }

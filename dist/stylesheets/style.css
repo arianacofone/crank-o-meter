@@ -269,15 +269,15 @@ margin-bottom: 8rem;
 }
 
 #wholeHeader {
-  position: fixed;
+  position: relative;
   width: 99%;
-  z-index: 1;
+  /*z-index: 1;*/
 }
 
-#blankSpace {
+/*#blankSpace {
   height: 300px;
   width: 100%;
-}
+}*/
 #header {
 top: 0;
 width: 100%;
@@ -299,10 +299,10 @@ z-index: 1;*/
 
 #userScore{
     color: #e74c3c;
-    left: 40%;
+    left:31%;
     width: 40%;
     position: relative;
-    font-size: 60px;
+    font-size: 45px;
     font-weight: bold;
     font-family: 'Bitter', serif;
   }
@@ -366,6 +366,7 @@ input[type=button], input[type=submit] {
 input[type=text], select {
     width: 100%;
     padding: 12px 20px;
+    font-size: 20px;
     margin: 8px 0;
     display: inline-block;
     border: 1px solid #ccc;
