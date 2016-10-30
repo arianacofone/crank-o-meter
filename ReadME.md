@@ -1,13 +1,12 @@
 #Crank-O-Meter
 ![alt text] (/pics/version6.png "Closing in on the final version")
 
-For our group project, we built an app for cranky people! Through a three step process the user will be able to: </br>
-*   Take a quiz, registers their score visually on the Crank-O-Meter, totaling it after five questions.</br>
-*   Calm their anger, with a cute kitty gif.</br>
+For our group project, we built an app to help cranky people! To allow the cranky user to rid themselves of their anger, we take them through a three step process: </br>
+*   Take a quiz, which registers their cranky score visually on the Crank-O-Meter.</br>
+*   Calm their anger with a cute kitty gif.</br>
 *   Supplies a customizable apology letter for the user to send to their effected loved ones using nodemailer. </br>
-After the user's experience they shall feel lighter and hopefully void of crankiness!</br>
 
-View it <a href="https://crank-o-meter.herokuapp.com/">here!</a></br>
+Give it a try <a href="https://crank-o-meter.herokuapp.com/">here!</a></br>
 
 ##Technologies Used
 *   [React](https://facebook.github.io/react/docs/getting-started.html) - used to create a one page app allowing for efficent DOM updates. We have multiple components on the page that will need to be updated, including the actual crank-o-meter, rendering of the questions, user score and the sentences for the user's letter.
