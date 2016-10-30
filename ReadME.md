@@ -1,4 +1,7 @@
-#Crank-O-meter
+#Crank-O-Meter
+![alt text] (/pics/version6.png "Closing in on the final version")
+
+View it <a href="https://crank-o-meter.herokuapp.com/">here!</a><br>
 For our group project we decided to build an app that measures someone's crankiness. In order to measure the user's crankiness we developed 5 questions with score buttons attached. When a button is clicked (rating how angry the user is) the score is rendered on the Crank-O-Meter as well as being translated into a score below the questions. 
 Once the user receives their score they will be given a funny/cute GIF or video which may help to calm their anger. They can scroll down some more to find a login/register so they can begin their "apology" letter. The inputs rendered for the apology letter will have sentences already prepopulated and able to be switched to a new sentence if the user prefers. The user may also edit the sentences/letter themself before the letter is sent. 
 The user will click send to email the specified party's email. Nodemailer will initiate the email service and will send out via a dedicated gmail account set up specifically for the app.
@@ -60,9 +63,6 @@ By meeting with the UX team, we realized what functions were essential to the ap
 
 ####Initial render with divs
 ![alt text] (/pics/divColorsRender.png "Initial render of our divs")
-
-#### 20 million versions later   
-![alt text] (/pics/version6.png "Closing in on the final version")
 
 ##Installation Instructions##
 Below you will find a full list of the dependencies used for the crank-o-meter:
